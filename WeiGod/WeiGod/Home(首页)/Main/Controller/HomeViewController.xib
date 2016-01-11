@@ -14,7 +14,43 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.65306779479999999" green="1" blue="0.45284061489999999" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页背景" translatesAutoresizingMaskIntoConstraints="NO" id="V5p-dF-uyD">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="V5p-dF-uyD" secondAttribute="trailing" id="2uA-Ck-Qw3"/>
+                <constraint firstItem="V5p-dF-uyD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4pr-tU-QdN"/>
+                <constraint firstItem="V5p-dF-uyD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DL1-yy-zzY"/>
+                <constraint firstAttribute="bottom" secondItem="V5p-dF-uyD" secondAttribute="bottom" id="ZTa-Ue-iUX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="V5p-dF-uyD"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="2uA-Ck-Qw3"/>
+                    <exclude reference="4pr-tU-QdN"/>
+                    <exclude reference="DL1-yy-zzY"/>
+                    <exclude reference="ZTa-Ue-iUX"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="V5p-dF-uyD"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="2uA-Ck-Qw3"/>
+                    <include reference="4pr-tU-QdN"/>
+                    <include reference="DL1-yy-zzY"/>
+                    <include reference="ZTa-Ue-iUX"/>
+                </mask>
+            </variation>
         </view>
     </objects>
+    <resources>
+        <image name="首页背景" width="750" height="1334"/>
+    </resources>
 </document>

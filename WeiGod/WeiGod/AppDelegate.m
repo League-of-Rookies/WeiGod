@@ -16,13 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-//    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
-//    self.window.backgroundColor = [UIColor whiteColor];
-//    UIViewController *rootViewController = [[UIViewController alloc] initWithNibName:@"TryView" bundle:nil];
-//    self.window.rootViewController = rootViewController;
-//    [self.window addSubview:rootViewController.view];
-//    [self.window makeKeyAndVisible];
+
     [self InitRootview];
     return YES;
 }

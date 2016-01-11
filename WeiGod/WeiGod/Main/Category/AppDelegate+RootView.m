@@ -30,10 +30,8 @@
     
     
     if ([currentVersion isEqualToString:lastVersion]) { // 当前版本号 == 上次使用的版本
-        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[RKTabBarController alloc] init]];
-        navigationController.navigationBar.hidden = YES;
-        self.window.rootViewController = navigationController;
-//        self.window.rootViewController = [[TryView alloc] init];
+        RKTabBarController * tabbarcontroller = [[RKTabBarController alloc]init];
+        self.window.rootViewController = tabbarcontroller;
         
     } else {
         // 当前版本号 != 上次使用的版本：显示引导页面
