@@ -7,15 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A09CE16F1C454FC5007A634B /* BaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09CE16E1C454FC5007A634B /* BaseUIViewController.m */; };
 		FE0243B61C3E7DEE00C5CE43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0243B51C3E7DEE00C5CE43 /* main.m */; };
 		FE0243B91C3E7DEE00C5CE43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0243B81C3E7DEE00C5CE43 /* AppDelegate.m */; };
-		FE0243BC1C3E7DEE00C5CE43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0243BB1C3E7DEE00C5CE43 /* ViewController.m */; };
-		FE0243BF1C3E7DEE00C5CE43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0243BD1C3E7DEE00C5CE43 /* Main.storyboard */; };
 		FE0243C11C3E7DEE00C5CE43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0243C01C3E7DEE00C5CE43 /* Assets.xcassets */; };
 		FE0243C41C3E7DEE00C5CE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0243C21C3E7DEE00C5CE43 /* LaunchScreen.storyboard */; };
-		FE0243CE1C3E83F900C5CE43 /* TryView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0243CC1C3E83F900C5CE43 /* TryView.m */; };
-		FE0243CF1C3E83F900C5CE43 /* TryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE0243CD1C3E83F900C5CE43 /* TryView.xib */; };
 		FE3DC41E1C4297970090ECEC /* AppDelegate+RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3DC41D1C4297970090ECEC /* AppDelegate+RootView.m */; };
 		FE3DC4291C42A7130090ECEC /* RKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3DC4281C42A7130090ECEC /* RKNavigationController.m */; };
 		FE3DC42C1C42A7630090ECEC /* RKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3DC42B1C42A7630090ECEC /* RKTabBarController.m */; };
@@ -23,24 +18,17 @@
 		FE3DC4311C42A7C40090ECEC /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE3DC42F1C42A7C40090ECEC /* HomeViewController.xib */; };
 		FE3DC4361C42A8340090ECEC /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3DC4341C42A8340090ECEC /* UserInfoViewController.m */; };
 		FE3DC4371C42A8340090ECEC /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE3DC4351C42A8340090ECEC /* UserInfoViewController.xib */; };
+		FE44B3541C455E6D00F4C0E9 /* BaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE44B3531C455E6D00F4C0E9 /* BaseUIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A09CE16D1C454FC5007A634B /* BaseUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUIViewController.h; sourceTree = "<group>"; };
-		A09CE16E1C454FC5007A634B /* BaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUIViewController.m; sourceTree = "<group>"; };
 		FE0243B11C3E7DEE00C5CE43 /* WeiGod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiGod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0243B51C3E7DEE00C5CE43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE0243B71C3E7DEE00C5CE43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FE0243B81C3E7DEE00C5CE43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FE0243BA1C3E7DEE00C5CE43 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FE0243BB1C3E7DEE00C5CE43 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FE0243BE1C3E7DEE00C5CE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE0243C01C3E7DEE00C5CE43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE0243C31C3E7DEE00C5CE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE0243C51C3E7DEE00C5CE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE0243CB1C3E83F900C5CE43 /* TryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TryView.h; sourceTree = "<group>"; };
-		FE0243CC1C3E83F900C5CE43 /* TryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TryView.m; sourceTree = "<group>"; };
-		FE0243CD1C3E83F900C5CE43 /* TryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TryView.xib; sourceTree = "<group>"; };
 		FE3DC41C1C4297970090ECEC /* AppDelegate+RootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+RootView.h"; path = "Main/Category/AppDelegate+RootView.h"; sourceTree = "<group>"; };
 		FE3DC41D1C4297970090ECEC /* AppDelegate+RootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+RootView.m"; path = "Main/Category/AppDelegate+RootView.m"; sourceTree = "<group>"; };
 		FE3DC4271C42A7130090ECEC /* RKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKNavigationController.h; path = Main/Controller/RKNavigationController.h; sourceTree = "<group>"; };
@@ -54,6 +42,8 @@
 		FE3DC4341C42A8340090ECEC /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfoViewController.m; path = "Me(我)/Main/Controller/UserInfoViewController.m"; sourceTree = "<group>"; };
 		FE3DC4351C42A8340090ECEC /* UserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserInfoViewController.xib; path = "Me(我)/Main/Controller/UserInfoViewController.xib"; sourceTree = "<group>"; };
 		FE3DC4381C42B16F0090ECEC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FE44B3521C455E6D00F4C0E9 /* BaseUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseUIViewController.h; path = Main/BaseViewController/BaseUIViewController.h; sourceTree = "<group>"; };
+		FE44B3531C455E6D00F4C0E9 /* BaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseUIViewController.m; path = Main/BaseViewController/BaseUIViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,16 +81,10 @@
 				FE66ECD51C412B70006C3D6D /* Home(首页) */,
 				FE0243B71C3E7DEE00C5CE43 /* AppDelegate.h */,
 				FE0243B81C3E7DEE00C5CE43 /* AppDelegate.m */,
-				FE0243BA1C3E7DEE00C5CE43 /* ViewController.h */,
-				FE0243BB1C3E7DEE00C5CE43 /* ViewController.m */,
-				FE0243BD1C3E7DEE00C5CE43 /* Main.storyboard */,
 				FE0243C01C3E7DEE00C5CE43 /* Assets.xcassets */,
 				FE0243C21C3E7DEE00C5CE43 /* LaunchScreen.storyboard */,
 				FE0243C51C3E7DEE00C5CE43 /* Info.plist */,
 				FE0243B41C3E7DEE00C5CE43 /* Supporting Files */,
-				FE0243CB1C3E83F900C5CE43 /* TryView.h */,
-				FE0243CC1C3E83F900C5CE43 /* TryView.m */,
-				FE0243CD1C3E83F900C5CE43 /* TryView.xib */,
 			);
 			path = WeiGod;
 			sourceTree = "<group>";
@@ -143,6 +127,15 @@
 				FE3DC4351C42A8340090ECEC /* UserInfoViewController.xib */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		FE44B3511C455E0400F4C0E9 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE44B3521C455E6D00F4C0E9 /* BaseUIViewController.h */,
+				FE44B3531C455E6D00F4C0E9 /* BaseUIViewController.m */,
+			);
+			name = BaseViewController;
 			sourceTree = "<group>";
 		};
 		FE66ECD51C412B70006C3D6D /* Home(首页) */ = {
@@ -188,6 +181,7 @@
 		FE66ECDA1C412C1B006C3D6D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FE44B3511C455E0400F4C0E9 /* BaseViewController */,
 				FE3DC41F1C42A1AF0090ECEC /* Controller */,
 				FE66ECDB1C412C30006C3D6D /* Category */,
 			);
@@ -199,8 +193,6 @@
 			children = (
 				FE3DC41C1C4297970090ECEC /* AppDelegate+RootView.h */,
 				FE3DC41D1C4297970090ECEC /* AppDelegate+RootView.m */,
-				A09CE16D1C454FC5007A634B /* BaseUIViewController.h */,
-				A09CE16E1C454FC5007A634B /* BaseUIViewController.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -284,7 +276,7 @@
 				TargetAttributes = {
 					FE0243B01C3E7DEE00C5CE43 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = FD3L2HT6VL;
+						DevelopmentTeam = 3LVCCM6M37;
 					};
 				};
 			};
@@ -315,8 +307,6 @@
 				FE0243C11C3E7DEE00C5CE43 /* Assets.xcassets in Resources */,
 				FE3DC4311C42A7C40090ECEC /* HomeViewController.xib in Resources */,
 				FE3DC4371C42A8340090ECEC /* UserInfoViewController.xib in Resources */,
-				FE0243CF1C3E83F900C5CE43 /* TryView.xib in Resources */,
-				FE0243BF1C3E7DEE00C5CE43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,30 +317,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE0243BC1C3E7DEE00C5CE43 /* ViewController.m in Sources */,
 				FE3DC41E1C4297970090ECEC /* AppDelegate+RootView.m in Sources */,
 				FE3DC4291C42A7130090ECEC /* RKNavigationController.m in Sources */,
 				FE0243B91C3E7DEE00C5CE43 /* AppDelegate.m in Sources */,
-				FE0243CE1C3E83F900C5CE43 /* TryView.m in Sources */,
 				FE3DC42C1C42A7630090ECEC /* RKTabBarController.m in Sources */,
 				FE0243B61C3E7DEE00C5CE43 /* main.m in Sources */,
 				FE3DC4301C42A7C40090ECEC /* HomeViewController.m in Sources */,
 				FE3DC4361C42A8340090ECEC /* UserInfoViewController.m in Sources */,
-				A09CE16F1C454FC5007A634B /* BaseUIViewController.m in Sources */,
+				FE44B3541C455E6D00F4C0E9 /* BaseUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FE0243BD1C3E7DEE00C5CE43 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE0243BE1C3E7DEE00C5CE43 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FE0243C21C3E7DEE00C5CE43 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

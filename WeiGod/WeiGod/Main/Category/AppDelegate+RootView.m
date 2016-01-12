@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate+RootView.h"
-#import "TryView.h"
 
 @implementation AppDelegate (RootView)
 
