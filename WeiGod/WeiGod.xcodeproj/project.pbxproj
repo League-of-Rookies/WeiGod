@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A09CE16F1C454FC5007A634B /* BaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09CE16E1C454FC5007A634B /* BaseUIViewController.m */; };
 		FE0243B61C3E7DEE00C5CE43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0243B51C3E7DEE00C5CE43 /* main.m */; };
 		FE0243B91C3E7DEE00C5CE43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0243B81C3E7DEE00C5CE43 /* AppDelegate.m */; };
 		FE0243BC1C3E7DEE00C5CE43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0243BB1C3E7DEE00C5CE43 /* ViewController.m */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A09CE16D1C454FC5007A634B /* BaseUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUIViewController.h; sourceTree = "<group>"; };
+		A09CE16E1C454FC5007A634B /* BaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUIViewController.m; sourceTree = "<group>"; };
 		FE0243B11C3E7DEE00C5CE43 /* WeiGod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiGod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0243B51C3E7DEE00C5CE43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE0243B71C3E7DEE00C5CE43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 			children = (
 				FE3DC41C1C4297970090ECEC /* AppDelegate+RootView.h */,
 				FE3DC41D1C4297970090ECEC /* AppDelegate+RootView.m */,
+				A09CE16D1C454FC5007A634B /* BaseUIViewController.h */,
+				A09CE16E1C454FC5007A634B /* BaseUIViewController.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -279,7 +284,7 @@
 				TargetAttributes = {
 					FE0243B01C3E7DEE00C5CE43 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 3LVCCM6M37;
+						DevelopmentTeam = FD3L2HT6VL;
 					};
 				};
 			};
@@ -331,6 +336,7 @@
 				FE0243B61C3E7DEE00C5CE43 /* main.m in Sources */,
 				FE3DC4301C42A7C40090ECEC /* HomeViewController.m in Sources */,
 				FE3DC4361C42A8340090ECEC /* UserInfoViewController.m in Sources */,
+				A09CE16F1C454FC5007A634B /* BaseUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
