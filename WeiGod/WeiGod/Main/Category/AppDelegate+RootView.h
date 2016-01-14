@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RKTabBarController.h"
+#import "RKNavigationController.h"
 @interface AppDelegate (RootView)
 
 /**

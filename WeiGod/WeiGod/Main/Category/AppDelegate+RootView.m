@@ -30,7 +30,9 @@
     
     if ([currentVersion isEqualToString:lastVersion]) { // 当前版本号 == 上次使用的版本
         RKTabBarController * tabbarcontroller = [[RKTabBarController alloc]init];
-        self.window.rootViewController = tabbarcontroller;
+        RKNavigationController *nav=[[RKNavigationController alloc]init];
+        [nav addChildViewController:tabbarcontroller];
+        self.window.rootViewController = nav;
         
     } else {
         // 当前版本号 != 上次使用的版本：显示引导页面

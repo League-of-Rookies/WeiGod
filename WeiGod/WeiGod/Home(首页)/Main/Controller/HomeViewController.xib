@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -12,11 +12,27 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页背景" translatesAutoresizingMaskIntoConstraints="NO" id="V5p-dF-uyD">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WeiGod" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acs-1x-ncT">
+                    <rect key="frame" x="8" y="8" width="176" height="67"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glO-bm-M0I">
+                    <rect key="frame" x="56" y="203" width="209" height="41"/>
+                    <state key="normal" backgroundImage="小微"/>
+                    <connections>
+                        <action selector="btnWeiXinClicked:" destination="-1" eventType="touchUpInside" id="6Sw-36-SZv"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="小微语言" translatesAutoresizingMaskIntoConstraints="NO" id="4nV-8T-wph">
+                    <rect key="frame" x="99" y="114" width="166" height="87"/>
                 </imageView>
             </subviews>
             <constraints>
@@ -26,31 +42,12 @@
                 <constraint firstAttribute="bottom" secondItem="V5p-dF-uyD" secondAttribute="bottom" id="ZTa-Ue-iUX"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <variation key="default">
-                <mask key="subviews">
-                    <exclude reference="V5p-dF-uyD"/>
-                </mask>
-                <mask key="constraints">
-                    <exclude reference="2uA-Ck-Qw3"/>
-                    <exclude reference="4pr-tU-QdN"/>
-                    <exclude reference="DL1-yy-zzY"/>
-                    <exclude reference="ZTa-Ue-iUX"/>
-                </mask>
-            </variation>
-            <variation key="widthClass=compact">
-                <mask key="subviews">
-                    <include reference="V5p-dF-uyD"/>
-                </mask>
-                <mask key="constraints">
-                    <include reference="2uA-Ck-Qw3"/>
-                    <include reference="4pr-tU-QdN"/>
-                    <include reference="DL1-yy-zzY"/>
-                    <include reference="ZTa-Ue-iUX"/>
-                </mask>
-            </variation>
+            <point key="canvasLocation" x="413" y="405"/>
         </view>
     </objects>
     <resources>
+        <image name="小微" width="490" height="120"/>
+        <image name="小微语言" width="300" height="150"/>
         <image name="首页背景" width="750" height="1334"/>
     </resources>
 </document>

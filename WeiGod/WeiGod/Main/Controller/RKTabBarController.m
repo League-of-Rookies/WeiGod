@@ -67,9 +67,11 @@
     }
     childVc.tabBarItem.selectedImage = selectedImage;
     
-    // 添加为tabbar控制器的子控制器
-    RKNavigationController *nav = [[RKNavigationController alloc] initWithRootViewController:childVc];
-    [self addChildViewController:nav];
+    
+    [self addChildViewController:childVc];
+//    // 添加为tabbar控制器的子控制器
+//    RKNavigationController *nav = [[RKNavigationController alloc] initWithRootViewController:childVc];
+//    [self addChildViewController:nav];
 }
 
 

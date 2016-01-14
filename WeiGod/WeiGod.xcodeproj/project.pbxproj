@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A09CE1791C47F85C007A634B /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09CE1771C47F85C007A634B /* ProductListViewController.m */; };
+		A09CE17A1C47F85C007A634B /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A09CE1781C47F85C007A634B /* ProductListViewController.xib */; };
 		FE0243B61C3E7DEE00C5CE43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0243B51C3E7DEE00C5CE43 /* main.m */; };
 		FE0243B91C3E7DEE00C5CE43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0243B81C3E7DEE00C5CE43 /* AppDelegate.m */; };
 		FE0243C11C3E7DEE00C5CE43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0243C01C3E7DEE00C5CE43 /* Assets.xcassets */; };
@@ -22,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A09CE1761C47F85C007A634B /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
+		A09CE1771C47F85C007A634B /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
+		A09CE1781C47F85C007A634B /* ProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
 		FE0243B11C3E7DEE00C5CE43 /* WeiGod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiGod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0243B51C3E7DEE00C5CE43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE0243B71C3E7DEE00C5CE43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +120,9 @@
 				FE3DC42D1C42A7C40090ECEC /* HomeViewController.h */,
 				FE3DC42E1C42A7C40090ECEC /* HomeViewController.m */,
 				FE3DC42F1C42A7C40090ECEC /* HomeViewController.xib */,
+				A09CE1761C47F85C007A634B /* ProductListViewController.h */,
+				A09CE1771C47F85C007A634B /* ProductListViewController.m */,
+				A09CE1781C47F85C007A634B /* ProductListViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -306,6 +314,7 @@
 				FE0243C41C3E7DEE00C5CE43 /* LaunchScreen.storyboard in Resources */,
 				FE0243C11C3E7DEE00C5CE43 /* Assets.xcassets in Resources */,
 				FE3DC4311C42A7C40090ECEC /* HomeViewController.xib in Resources */,
+				A09CE17A1C47F85C007A634B /* ProductListViewController.xib in Resources */,
 				FE3DC4371C42A8340090ECEC /* UserInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +332,7 @@
 				FE3DC42C1C42A7630090ECEC /* RKTabBarController.m in Sources */,
 				FE0243B61C3E7DEE00C5CE43 /* main.m in Sources */,
 				FE3DC4301C42A7C40090ECEC /* HomeViewController.m in Sources */,
+				A09CE1791C47F85C007A634B /* ProductListViewController.m in Sources */,
 				FE3DC4361C42A8340090ECEC /* UserInfoViewController.m in Sources */,
 				FE44B3541C455E6D00F4C0E9 /* BaseUIViewController.m in Sources */,
 			);
