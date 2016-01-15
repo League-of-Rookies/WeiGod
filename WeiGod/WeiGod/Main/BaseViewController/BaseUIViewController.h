@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
+
+
 @interface BaseUIViewController : UIViewController
 @property(nonatomic)BOOL isHiddenBar;
 @end
