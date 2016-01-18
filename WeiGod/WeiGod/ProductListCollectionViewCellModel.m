@@ -13,11 +13,30 @@
 -(instancetype)init{
     if (self=[super init]) {
      
-        _backGround=@"weixinduihua";
+        _backGround=@"wx1";
         _titleString=@"微信聊天对话界面";
-        _titleIsHidden=NO;
+       
+        _IsBigShow=NO;
+        if(_IsBigShow){
+            _titleIsHidden=YES;
+        }else
+        {
+            _titleIsHidden=NO;
+        }
     }
     
     return self;
+}
+
+
+-(void)setIsBigShow:(BOOL)IsBigShow{
+    _IsBigShow=IsBigShow;
+    if(_IsBigShow){
+        _titleIsHidden=YES;
+    }else
+    {
+        _titleIsHidden=NO;
+    }
+
 }
 @end

@@ -13,4 +13,5 @@
 @property(nonatomic,retain)NSString *backGround;
 @property(nonatomic,retain)NSString *titleString;
 @property(nonatomic)BOOL titleIsHidden;
+@property(nonatomic)BOOL IsBigShow;///是否大图显示
 @end

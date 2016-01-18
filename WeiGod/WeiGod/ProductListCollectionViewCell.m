@@ -17,6 +17,7 @@
 
 @implementation ProductListCollectionViewCell
 
+
 - (void)awakeFromNib {
     // Initialization code
 }
@@ -29,9 +30,20 @@
         }
         self=[arrayOfViews objectAtIndex:0];
     }
+    UITapGestureRecognizer *tagGestureRecognizer=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(cellClicked)];
+    [self addGestureRecognizer:tagGestureRecognizer];
     return self;
 }
 
+-(void)cellClicked{
+    if (self.cellBlockClicked) {
+        self.cellBlockClicked();
+    }
+}
+
+-(void)handlerCellClickAction:(CellBlockClicked)block{
+    self.cellBlockClicked=block;
+}
 
 -(void)setModel:(ProductListCollectionViewCellModel *)model{
     _model=model;
@@ -39,9 +51,13 @@
         [self.cellBackGround setImage:[UIImage imageNamed:_model.backGround]];
     }if(_model.titleString){
         [self.titleDetails setText:_model.titleString];
-    }if (_model.titleIsHidden) {
+    }if (_model.titleIsHidden==YES) {
         [self.titleDetails setHidden:_model.titleIsHidden];
+    }else{
+        [self.titleDetails setHidden:NO];
     }
     
 }
+
+
 @end

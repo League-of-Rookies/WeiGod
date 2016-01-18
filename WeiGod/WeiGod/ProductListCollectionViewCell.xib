@@ -13,7 +13,7 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="135" height="240"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weixinduihua" translatesAutoresizingMaskIntoConstraints="NO" id="eCc-Nx-IY7">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wx1" translatesAutoresizingMaskIntoConstraints="NO" id="eCc-Nx-IY7">
                         <rect key="frame" x="0.0" y="0.0" width="135" height="240"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信聊天界面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2a-S9-wEQ">
@@ -43,10 +43,10 @@
                 <outlet property="cellBackGround" destination="eCc-Nx-IY7" id="e8M-BF-rfe"/>
                 <outlet property="titleDetails" destination="O2a-S9-wEQ" id="5St-ws-PDx"/>
             </connections>
-            <point key="canvasLocation" x="193.5" y="370"/>
+            <point key="canvasLocation" x="163.5" y="417"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="weixinduihua" width="640" height="1136"/>
+        <image name="wx1" width="640" height="1136"/>
     </resources>
 </document>
