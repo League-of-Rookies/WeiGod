@@ -31,7 +31,6 @@
     if (self = [super initWithRootViewController:rootViewController]) {
         // 设置navigationBar是否透明，不透明的话会使可用界面原点下移（0，0）点为导航栏左下角下方的那个点
 //       self.navigationBar.translucent = NO;
-        NSLog(@"11");
         self.navigationBar.hidden = YES;
     }
     return self;

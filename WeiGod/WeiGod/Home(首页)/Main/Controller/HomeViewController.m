@@ -26,7 +26,6 @@
 
 
 - (IBAction)btnWeiXinClicked:(UIButton *)sender {
-//    
    ProductListViewController *weixinlist=[[ProductListViewController alloc]init];
 //    RKNavigationController *nav=[[RKNavigationController alloc]initWithRootViewController:weixinlist];
 //    nav.modalTransitionStyle=UIModalTransitionStyleFlipHorizontal;

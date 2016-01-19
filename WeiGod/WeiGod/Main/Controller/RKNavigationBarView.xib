@@ -37,7 +37,7 @@
                 <outlet property="rightButton" destination="Zpu-xQ-btd" id="mIH-On-5w1"/>
                 <outlet property="title" destination="gxg-Tb-tjg" id="tyE-IW-6Ek"/>
             </connections>
-            <point key="canvasLocation" x="287" y="295"/>
+            <point key="canvasLocation" x="269" y="273"/>
         </view>
     </objects>
 </document>

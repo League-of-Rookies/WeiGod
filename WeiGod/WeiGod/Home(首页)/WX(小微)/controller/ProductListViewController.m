@@ -29,13 +29,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    
     [self initNavView];
     [self initProductData];
-
-  
-    
     [self.ProductList registerClass:[ProductListCollectionViewCell class]forCellWithReuseIdentifier:@"ProductListCollectionViewCell"];
     [self.ProductList setBackgroundColor:[UIColor clearColor]];
     self.ProductList.delegate=self;
@@ -49,8 +44,6 @@
         model.backGround=[NSString stringWithFormat:@"wx%d",i];
         [self.productData addObject:model];
     }
-    
-
 }
 
 -(void)initNavView{
@@ -65,13 +58,9 @@
     }];
     UICollectionViewFlowLayout * layout=(UICollectionViewFlowLayout *)self.ProductList.collectionViewLayout;
     [barView handlerRightButtonAction:^{
-        //处理右边按钮的点击事件...应该可以优化的。懒得想了
-        //最好是model再添加一个参数；
-       // i++;
-    
         if(!self.isBigShow){
             self.isBigShow=YES;
-            barView.model.rightButtonBackGround=@"productlist_show2";
+            barView.model.rightButtonBackGround=@"productlist_show1";
             layout.scrollDirection=UICollectionViewScrollDirectionHorizontal;
             layout.itemSize=CGSizeMake(270, 480);
             layout.minimumLineSpacing=40.0f;
@@ -80,15 +69,14 @@
             [self.ProductList setCollectionViewLayout:layout animated:YES];
         }else{
             self.isBigShow=NO;
-            barView.model.rightButtonBackGround=@"productlist_show1";
-            
+            barView.model.rightButtonBackGround=@"productlist_show2";
             layout.scrollDirection=UICollectionViewScrollDirectionVertical;
             layout.itemSize=CGSizeMake(135, 240);
             layout.minimumLineSpacing=10.0f;
             layout.sectionInset=UIEdgeInsetsMake(0, 15, 0, 15);
             self.ProductList.pagingEnabled=NO;
             [self.ProductList setCollectionViewLayout:layout animated:YES];
-        }//这里绝对 需要优化的
+        }
         barView.model=barView.model;
       
         [self.ProductList reloadData];
@@ -102,7 +90,7 @@
     return self.productData.count;
 }
 
-// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     ProductListCollectionViewCell *cell=(ProductListCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"ProductListCollectionViewCell" forIndexPath:indexPath];
     
@@ -113,7 +101,8 @@
         model.IsBigShow=YES;
     }else{
     
-        model.IsBigShow=NO;}
+        model.IsBigShow=NO;
+    }
     cell.model=model;
     [cell handlerCellClickAction:^{
         NSLog(@"clicked:%ld",(long)indexPath.row);

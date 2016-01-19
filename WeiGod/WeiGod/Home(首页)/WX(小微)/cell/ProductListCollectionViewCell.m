@@ -21,17 +21,19 @@
 - (void)awakeFromNib {
     // Initialization code
 }
--(instancetype)initWithFrame:(CGRect)frame{
-    if (self=[super initWithFrame:frame]) {
+- (instancetype)initWithFrame:(CGRect)frame{
+    if (self =[super initWithFrame:frame]) {
         NSArray *arrayOfViews=[[NSBundle mainBundle]loadNibNamed:@"ProductListCollectionViewCell" owner:nil options:nil];
-        if(arrayOfViews.count<1){return nil;}
+        if(arrayOfViews.count < 1){
+            return nil;
+        }
         if(![[arrayOfViews objectAtIndex:0] isKindOfClass:[UICollectionViewCell class]]){
             return nil;
         }
         self=[arrayOfViews objectAtIndex:0];
+        UITapGestureRecognizer *tagGestureRecognizer=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(cellClicked)];
+        [self addGestureRecognizer:tagGestureRecognizer];
     }
-    UITapGestureRecognizer *tagGestureRecognizer=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(cellClicked)];
-    [self addGestureRecognizer:tagGestureRecognizer];
     return self;
 }
 

@@ -39,7 +39,6 @@
     if(model.rightButtonBackGround){
         [self.rightButton setBackgroundImage:[UIImage imageNamed:model.rightButtonBackGround] forState:UIControlStateNormal];
     }
-    
     if(model.bodyBackGroundColor){
         [self setBackgroundColor:HexRGBAlpha(model.bodyBackGroundColor, 1.0)];
     }
@@ -52,7 +51,6 @@
     }if (model.titleString) {
         [self.title setText:model.titleString];
     }
-    
 }
 - (IBAction)leftButtonClicked:(UIButton *)sender {
     if(self.leftBlockClicked){
