@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0DA4CA91C519052007953C8 /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DA4CA81C519052007953C8 /* CommonTool.m */; };
+		A0DA4CAC1C519074007953C8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DA4CAB1C519074007953C8 /* QuartzCore.framework */; };
+		A0DA4CB31C5190A0007953C8 /* WXChatEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DA4CAE1C5190A0007953C8 /* WXChatEditViewController.m */; };
+		A0DA4CB41C5190A0007953C8 /* WXChatEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0DA4CAF1C5190A0007953C8 /* WXChatEditViewController.xib */; };
+		A0DA4CB51C5190A0007953C8 /* WXChatPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DA4CB11C5190A0007953C8 /* WXChatPreviewViewController.m */; };
+		A0DA4CB61C5190A0007953C8 /* WXChatPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0DA4CB21C5190A0007953C8 /* WXChatPreviewViewController.xib */; };
 		FE0243B61C3E7DEE00C5CE43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0243B51C3E7DEE00C5CE43 /* main.m */; };
 		FE0243B91C3E7DEE00C5CE43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0243B81C3E7DEE00C5CE43 /* AppDelegate.m */; };
 		FE0243C11C3E7DEE00C5CE43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0243C01C3E7DEE00C5CE43 /* Assets.xcassets */; };
@@ -30,6 +36,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0DA4CA71C519052007953C8 /* CommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTool.h; sourceTree = "<group>"; };
+		A0DA4CA81C519052007953C8 /* CommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTool.m; sourceTree = "<group>"; };
+		A0DA4CAB1C519074007953C8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A0DA4CAD1C5190A0007953C8 /* WXChatEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXChatEditViewController.h; sourceTree = "<group>"; };
+		A0DA4CAE1C5190A0007953C8 /* WXChatEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXChatEditViewController.m; sourceTree = "<group>"; };
+		A0DA4CAF1C5190A0007953C8 /* WXChatEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXChatEditViewController.xib; sourceTree = "<group>"; };
+		A0DA4CB01C5190A0007953C8 /* WXChatPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXChatPreviewViewController.h; sourceTree = "<group>"; };
+		A0DA4CB11C5190A0007953C8 /* WXChatPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXChatPreviewViewController.m; sourceTree = "<group>"; };
+		A0DA4CB21C5190A0007953C8 /* WXChatPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXChatPreviewViewController.xib; sourceTree = "<group>"; };
 		FE0243B11C3E7DEE00C5CE43 /* WeiGod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiGod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0243B51C3E7DEE00C5CE43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE0243B71C3E7DEE00C5CE43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,15 +87,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0DA4CAC1C519074007953C8 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0DA4CAA1C51905D007953C8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A0DA4CA71C519052007953C8 /* CommonTool.h */,
+				A0DA4CA81C519052007953C8 /* CommonTool.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		FE0243A81C3E7DEE00C5CE43 = {
 			isa = PBXGroup;
 			children = (
+				A0DA4CAB1C519074007953C8 /* QuartzCore.framework */,
 				FE0243B31C3E7DEE00C5CE43 /* WeiGod */,
 				FE0243B21C3E7DEE00C5CE43 /* Products */,
 			);
@@ -208,6 +234,7 @@
 		FE66ECDA1C412C1B006C3D6D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A0DA4CAA1C51905D007953C8 /* Common */,
 				FE44B3511C455E0400F4C0E9 /* BaseViewController */,
 				FEE6C4C71C4D265B005894A5 /* Model */,
 				FE3DC41F1C42A1AF0090ECEC /* Controller */,
@@ -279,6 +306,12 @@
 				FEE6C4BA1C4D1EB7005894A5 /* ProductListViewController.h */,
 				FEE6C4BB1C4D1EB7005894A5 /* ProductListViewController.m */,
 				FEE6C4BC1C4D1EB7005894A5 /* ProductListViewController.xib */,
+				A0DA4CAD1C5190A0007953C8 /* WXChatEditViewController.h */,
+				A0DA4CAE1C5190A0007953C8 /* WXChatEditViewController.m */,
+				A0DA4CAF1C5190A0007953C8 /* WXChatEditViewController.xib */,
+				A0DA4CB01C5190A0007953C8 /* WXChatPreviewViewController.h */,
+				A0DA4CB11C5190A0007953C8 /* WXChatPreviewViewController.m */,
+				A0DA4CB21C5190A0007953C8 /* WXChatPreviewViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -370,8 +403,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE0243C41C3E7DEE00C5CE43 /* LaunchScreen.storyboard in Resources */,
+				A0DA4CB41C5190A0007953C8 /* WXChatEditViewController.xib in Resources */,
 				FE0243C11C3E7DEE00C5CE43 /* Assets.xcassets in Resources */,
 				FEE6C4C61C4D1EDD005894A5 /* ProductListCollectionViewCell.xib in Resources */,
+				A0DA4CB61C5190A0007953C8 /* WXChatPreviewViewController.xib in Resources */,
 				FEE6C4BE1C4D1EB7005894A5 /* ProductListViewController.xib in Resources */,
 				FE3DC4311C42A7C40090ECEC /* HomeViewController.xib in Resources */,
 				FE3DC4371C42A8340090ECEC /* UserInfoViewController.xib in Resources */,
@@ -387,11 +422,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3DC41E1C4297970090ECEC /* AppDelegate+RootView.m in Sources */,
+				A0DA4CB31C5190A0007953C8 /* WXChatEditViewController.m in Sources */,
 				FE3DC4291C42A7130090ECEC /* RKNavigationController.m in Sources */,
+				A0DA4CA91C519052007953C8 /* CommonTool.m in Sources */,
 				FE0243B91C3E7DEE00C5CE43 /* AppDelegate.m in Sources */,
 				FEE6C4C51C4D1EDD005894A5 /* ProductListCollectionViewCell.m in Sources */,
 				FEE6C4BD1C4D1EB7005894A5 /* ProductListViewController.m in Sources */,
 				FE3DC42C1C42A7630090ECEC /* RKTabBarController.m in Sources */,
+				A0DA4CB51C5190A0007953C8 /* WXChatPreviewViewController.m in Sources */,
 				FE0243B61C3E7DEE00C5CE43 /* main.m in Sources */,
 				FEE6C4CA1C4D2709005894A5 /* RKNavigationBarViewModel.m in Sources */,
 				FEE6C4CE1C4D271B005894A5 /* RKNavigationBarView.m in Sources */,

@@ -14,4 +14,5 @@
 @property(nonatomic,retain)NSString *titleString;
 @property(nonatomic)BOOL titleIsHidden;
 @property(nonatomic)BOOL IsBigShow;///是否大图显示
+@property(nonatomic)NSInteger jumpType;///跳转类型
 @end

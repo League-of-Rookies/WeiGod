@@ -10,6 +10,7 @@
 #import "RKNavigationBarView.h"
 #import "RKNavigationBarViewModel.h"
 #import "ProductListCollectionViewCell.h"
+#import "WXChatPreviewViewController.h"
 
 @interface ProductListViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UIView *HeaderView;
@@ -105,7 +106,13 @@
     }
     cell.model=model;
     [cell handlerCellClickAction:^{
-        NSLog(@"clicked:%ld",(long)indexPath.row);
+      
+        
+        if(cell.model.jumpType==1){
+            BaseUIViewController *wx=[[WXChatPreviewViewController alloc]init];
+            [self.navigationController pushViewController:wx animated:YES];
+            
+        }
     }];
     return cell;
 }

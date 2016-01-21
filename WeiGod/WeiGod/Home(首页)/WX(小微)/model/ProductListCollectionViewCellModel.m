@@ -23,6 +23,7 @@
         {
             _titleIsHidden=NO;
         }
+        _jumpType=1;
     }
     
     return self;
