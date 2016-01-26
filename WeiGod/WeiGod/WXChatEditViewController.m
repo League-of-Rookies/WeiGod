@@ -7,7 +7,10 @@
 //
 
 #import "WXChatEditViewController.h"
-
+#import "RKNavigationBarView.h"
+#import "RKNavigationBarViewModel.h"
+#import "WXChatEditViewController.h"
+#import "CommonTool.h"
 @interface WXChatEditViewController ()
 
 @end
@@ -16,22 +19,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self initNavView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)initNavView{
+    RKNavigationBarViewModel *model=[[RKNavigationBarViewModel alloc]init];
+    model.titleIsHidden=NO;
+    model.titleString=@"预览";
+    RKNavigationBarView *barView=[RKNavigationBarView instanceObjectWithModel:model];
+    barView.frame=self.HeaderView.bounds;
+    
+    [barView handlerLeftButtonAction:^{
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+    [barView handlerRightButtonAction:^{
+        ///保存图片什么的
+    }];
+    [self.HeaderView addSubview:barView];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+-(void)returnImage:(ReturnImageBlock)block{
+    self.returnImageBlock
+    =block;
 }
-*/
 
+-(void)viewWillDisappear:(BOOL)animated{
+    
+    if(self.returnImageBlock!=nil){
+        self.returnImageBlock([CommonTool getImageFromView:self.HeaderView]);
+    }
+}
 @end

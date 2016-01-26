@@ -7,8 +7,14 @@
 //
 
 #import "WXChatPreviewViewController.h"
+#import "RKNavigationBarView.h"
+#import "RKNavigationBarViewModel.h"
+#import "WXChatEditViewController.h"
 
 @interface WXChatPreviewViewController ()
+@property (strong, nonatomic) IBOutlet UIView *HeaderView;
+@property (strong, nonatomic) IBOutlet UIView *FooterView;
+
 
 @end
 
@@ -16,22 +22,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self initNavView];
+    [self initFooterView];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+-(void)initNavView{
+    RKNavigationBarViewModel *model=[[RKNavigationBarViewModel alloc]init];
+    model.titleIsHidden=NO;
+    model.titleString=@"预览";
+    RKNavigationBarView *barView=[RKNavigationBarView instanceObjectWithModel:model];
+    barView.frame=self.HeaderView.bounds;
+    
+    [barView handlerLeftButtonAction:^{
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+    [barView handlerRightButtonAction:^{
+    ///保存图片什么的
+    }];
+    [self.HeaderView addSubview:barView];
 }
 
-/*
-#pragma mark - Navigation
+-(void)initFooterView{
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
-
+///编辑按钮点击
+- (IBAction)ButtonEditingClicked:(UIButton *)sender {
+    WXChatEditViewController *wx=[[WXChatEditViewController alloc]init];
+    [wx returnImage:^(UIImage *image) {
+        self.perviewImage=image;
+    }];
+    [self.navigationController pushViewController:wx animated:YES];
+}
+-(void)viewWillAppear:(BOOL)animated{
+    if(self.perviewImage!=nil){
+        [self.PerviewImageView setImage:self.perviewImage];
+    }else{
+        [self.PerviewImageView setImage:[UIImage imageNamed:@"wx3"]];
+    }
+}
 @end

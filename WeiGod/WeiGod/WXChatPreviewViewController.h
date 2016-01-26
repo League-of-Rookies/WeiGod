@@ -8,6 +8,9 @@
 
 #import "BaseUIViewController.h"
 
+
 @interface WXChatPreviewViewController : BaseUIViewController
 
+@property (strong, nonatomic) IBOutlet UIImageView *PerviewImageView;
+@property(strong,nonatomic)UIImage *perviewImage;
 @end
