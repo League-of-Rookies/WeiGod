@@ -6,20 +6,20 @@
 //  Copyright © 2016年 WeiGod. All rights reserved.
 //
 
-#import "ProductListViewController.h"
+#import "ProdListViewController.h"
 #import "RKNavigationBarView.h"
 #import "RKNavigationBarViewModel.h"
 #import "ProductListCollectionViewCell.h"
 #import "WXChatPreviewViewController.h"
 
-@interface ProductListViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
-@property (weak, nonatomic) IBOutlet UIView *HeaderView;
+@interface ProdListViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
+@property (weak, nonatomic) IBOutlet UIView * HeaderView;
 @property (weak, nonatomic) IBOutlet UICollectionView *ProductList;
 @property(nonatomic,strong)NSMutableArray *productData;//集合
-@property(nonatomic)BOOL isBigShow;///是否大图显示
+@property(nonatomic)BOOL isBigShow;///是否以列表显示
 @end
 
-@implementation ProductListViewController
+@implementation ProdListViewController
 
 -(instancetype)init{
     if (self=[super init]) {
@@ -40,7 +40,7 @@
 
 -(void)initProductData{
     for (int i=1; i<=6; i++) {
-        ProductListCollectionViewCellModel *model=[[ProductListCollectionViewCellModel alloc]init];
+        ProdListCollCellMod *model=[[ProdListCollCellMod alloc]init];
         model.titleString=[NSString stringWithFormat:@"微信界面%d",i];
         model.backGround=[NSString stringWithFormat:@"wx%d",i];
         [self.productData addObject:model];
@@ -54,10 +54,12 @@
     RKNavigationBarView *barView=[RKNavigationBarView instanceObjectWithModel:model];
     barView.frame=self.HeaderView.bounds;
     
+    UICollectionViewFlowLayout * layout=(UICollectionViewFlowLayout *)self.ProductList.collectionViewLayout;
+    
     [barView handlerLeftButtonAction:^{
         [self.navigationController popViewControllerAnimated:YES];
     }];
-    UICollectionViewFlowLayout * layout=(UICollectionViewFlowLayout *)self.ProductList.collectionViewLayout;
+    
     [barView handlerRightButtonAction:^{
         if(!self.isBigShow){
             self.isBigShow=YES;
@@ -95,7 +97,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     ProductListCollectionViewCell *cell=(ProductListCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"ProductListCollectionViewCell" forIndexPath:indexPath];
     
-    ProductListCollectionViewCellModel *model=[self.productData objectAtIndex:indexPath.row];
+    ProdListCollCellMod *model=[self.productData objectAtIndex:indexPath.row];
 
 
     if (self.isBigShow) {
@@ -106,12 +108,9 @@
     }
     cell.model=model;
     [cell handlerCellClickAction:^{
-      
-        
         if(cell.model.jumpType==1){
             BaseUIViewController *wx=[[WXChatPreviewViewController alloc]init];
             [self.navigationController pushViewController:wx animated:YES];
-            
         }
     }];
     return cell;

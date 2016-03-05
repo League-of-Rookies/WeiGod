@@ -8,7 +8,7 @@
 
 #import "BaseUIViewController.h"
 
-@interface ProductListViewController : BaseUIViewController
+@interface ProdListViewController : BaseUIViewController
 
 
 

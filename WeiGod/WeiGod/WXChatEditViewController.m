@@ -7,6 +7,7 @@
 //
 
 #import "WXChatEditViewController.h"
+#import "WXHeadView.h"
 #import "RKNavigationBarView.h"
 #import "RKNavigationBarViewModel.h"
 #import "WXChatEditViewController.h"
@@ -19,15 +20,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initNavView];
+    [self initHeadView];
+}
+
+/**
+ *  初始化头视图
+ */
+- (void)initHeadView{
+    WXHeadView * headview = [WXHeadView instanceObject];
+    headview.frame=self.HeaderView.bounds;
+    [self.HeaderView addSubview:headview];
 }
 
 -(void)initNavView{
     RKNavigationBarViewModel *model=[[RKNavigationBarViewModel alloc]init];
-    model.titleIsHidden=NO;
-    model.titleString=@"预览";
+    model.titleIsHidden=YES;
     RKNavigationBarView *barView=[RKNavigationBarView instanceObjectWithModel:model];
-    barView.frame=self.HeaderView.bounds;
+    barView.frame=self.MyView.bounds;
     
     [barView handlerLeftButtonAction:^{
         [self.navigationController popViewControllerAnimated:YES];
@@ -35,7 +44,7 @@
     [barView handlerRightButtonAction:^{
         ///保存图片什么的
     }];
-    [self.HeaderView addSubview:barView];
+    [self.MyView addSubview:barView];
 }
 
 
@@ -48,7 +57,7 @@
 -(void)viewWillDisappear:(BOOL)animated{
     
     if(self.returnImageBlock!=nil){
-        self.returnImageBlock([CommonTool getImageFromView:self.HeaderView]);
+        self.returnImageBlock([CommonTool getImageFromView:self.MyView]);
     }
 }
 @end

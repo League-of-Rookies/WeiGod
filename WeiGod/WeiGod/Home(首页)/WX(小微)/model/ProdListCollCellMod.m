@@ -6,9 +6,9 @@
 //  Copyright © 2016年 WeiGod. All rights reserved.
 //
 
-#import "ProductListCollectionViewCellModel.h"
+#import "ProdListCollCellMod.h"
 
-@implementation ProductListCollectionViewCellModel
+@implementation ProdListCollCellMod
 
 -(instancetype)init{
     if (self=[super init]) {

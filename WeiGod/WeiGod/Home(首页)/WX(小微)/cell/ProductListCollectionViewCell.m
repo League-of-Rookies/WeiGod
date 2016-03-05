@@ -47,7 +47,7 @@
     self.cellBlockClicked=block;
 }
 
--(void)setModel:(ProductListCollectionViewCellModel *)model{
+-(void)setModel:(ProdListCollCellMod *)model{
     _model=model;
     if (_model.backGround) {
         [self.cellBackGround setImage:[UIImage imageNamed:_model.backGround]];

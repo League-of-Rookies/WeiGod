@@ -25,9 +25,12 @@
 		FE3DC4361C42A8340090ECEC /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3DC4341C42A8340090ECEC /* UserInfoViewController.m */; };
 		FE3DC4371C42A8340090ECEC /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE3DC4351C42A8340090ECEC /* UserInfoViewController.xib */; };
 		FE44B3541C455E6D00F4C0E9 /* BaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE44B3531C455E6D00F4C0E9 /* BaseUIViewController.m */; };
-		FEE6C4BD1C4D1EB7005894A5 /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE6C4BB1C4D1EB7005894A5 /* ProductListViewController.m */; };
-		FEE6C4BE1C4D1EB7005894A5 /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEE6C4BC1C4D1EB7005894A5 /* ProductListViewController.xib */; };
-		FEE6C4C11C4D1ED3005894A5 /* ProductListCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE6C4C01C4D1ED3005894A5 /* ProductListCollectionViewCellModel.m */; };
+		FEB2DB631C8810CB0026F35F /* WXHeadMod.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB2DB621C8810CB0026F35F /* WXHeadMod.m */; };
+		FEB2DB661C8813E70026F35F /* WXHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB2DB651C8813E70026F35F /* WXHeadView.m */; };
+		FEB2DB681C88191F0026F35F /* WXHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB2DB671C88191F0026F35F /* WXHeadView.xib */; };
+		FEE6C4BD1C4D1EB7005894A5 /* ProdListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE6C4BB1C4D1EB7005894A5 /* ProdListViewController.m */; };
+		FEE6C4BE1C4D1EB7005894A5 /* ProdListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEE6C4BC1C4D1EB7005894A5 /* ProdListViewController.xib */; };
+		FEE6C4C11C4D1ED3005894A5 /* ProdListCollCellMod.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE6C4C01C4D1ED3005894A5 /* ProdListCollCellMod.m */; };
 		FEE6C4C51C4D1EDD005894A5 /* ProductListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE6C4C31C4D1EDD005894A5 /* ProductListCollectionViewCell.m */; };
 		FEE6C4C61C4D1EDD005894A5 /* ProductListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEE6C4C41C4D1EDD005894A5 /* ProductListCollectionViewCell.xib */; };
 		FEE6C4CA1C4D2709005894A5 /* RKNavigationBarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE6C4C91C4D2709005894A5 /* RKNavigationBarViewModel.m */; };
@@ -67,11 +70,16 @@
 		FE3DC4381C42B16F0090ECEC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FE44B3521C455E6D00F4C0E9 /* BaseUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseUIViewController.h; path = Main/BaseViewController/BaseUIViewController.h; sourceTree = "<group>"; };
 		FE44B3531C455E6D00F4C0E9 /* BaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseUIViewController.m; path = Main/BaseViewController/BaseUIViewController.m; sourceTree = "<group>"; };
-		FEE6C4BA1C4D1EB7005894A5 /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductListViewController.h; path = "Home(首页)/WX(小微)/controller/ProductListViewController.h"; sourceTree = "<group>"; };
-		FEE6C4BB1C4D1EB7005894A5 /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductListViewController.m; path = "Home(首页)/WX(小微)/controller/ProductListViewController.m"; sourceTree = "<group>"; };
-		FEE6C4BC1C4D1EB7005894A5 /* ProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductListViewController.xib; path = "Home(首页)/WX(小微)/controller/ProductListViewController.xib"; sourceTree = "<group>"; };
-		FEE6C4BF1C4D1ED3005894A5 /* ProductListCollectionViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductListCollectionViewCellModel.h; path = "Home(首页)/WX(小微)/model/ProductListCollectionViewCellModel.h"; sourceTree = "<group>"; };
-		FEE6C4C01C4D1ED3005894A5 /* ProductListCollectionViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductListCollectionViewCellModel.m; path = "Home(首页)/WX(小微)/model/ProductListCollectionViewCellModel.m"; sourceTree = "<group>"; };
+		FEB2DB611C8810CB0026F35F /* WXHeadMod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXHeadMod.h; path = "Home(首页)/WX(小微)/model/WXHeadMod.h"; sourceTree = "<group>"; };
+		FEB2DB621C8810CB0026F35F /* WXHeadMod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXHeadMod.m; path = "Home(首页)/WX(小微)/model/WXHeadMod.m"; sourceTree = "<group>"; };
+		FEB2DB641C8813E70026F35F /* WXHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXHeadView.h; path = "Home(首页)/WX(小微)/controller/WXHeadView.h"; sourceTree = "<group>"; };
+		FEB2DB651C8813E70026F35F /* WXHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXHeadView.m; path = "Home(首页)/WX(小微)/controller/WXHeadView.m"; sourceTree = "<group>"; };
+		FEB2DB671C88191F0026F35F /* WXHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXHeadView.xib; sourceTree = "<group>"; };
+		FEE6C4BA1C4D1EB7005894A5 /* ProdListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProdListViewController.h; path = "Home(首页)/WX(小微)/controller/ProdListViewController.h"; sourceTree = "<group>"; };
+		FEE6C4BB1C4D1EB7005894A5 /* ProdListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProdListViewController.m; path = "Home(首页)/WX(小微)/controller/ProdListViewController.m"; sourceTree = "<group>"; };
+		FEE6C4BC1C4D1EB7005894A5 /* ProdListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProdListViewController.xib; path = "Home(首页)/WX(小微)/controller/ProdListViewController.xib"; sourceTree = "<group>"; };
+		FEE6C4BF1C4D1ED3005894A5 /* ProdListCollCellMod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProdListCollCellMod.h; path = "Home(首页)/WX(小微)/model/ProdListCollCellMod.h"; sourceTree = "<group>"; };
+		FEE6C4C01C4D1ED3005894A5 /* ProdListCollCellMod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProdListCollCellMod.m; path = "Home(首页)/WX(小微)/model/ProdListCollCellMod.m"; sourceTree = "<group>"; };
 		FEE6C4C21C4D1EDD005894A5 /* ProductListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductListCollectionViewCell.h; path = "Home(首页)/WX(小微)/cell/ProductListCollectionViewCell.h"; sourceTree = "<group>"; };
 		FEE6C4C31C4D1EDD005894A5 /* ProductListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductListCollectionViewCell.m; path = "Home(首页)/WX(小微)/cell/ProductListCollectionViewCell.m"; sourceTree = "<group>"; };
 		FEE6C4C41C4D1EDD005894A5 /* ProductListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductListCollectionViewCell.xib; path = "Home(首页)/WX(小微)/cell/ProductListCollectionViewCell.xib"; sourceTree = "<group>"; };
@@ -303,15 +311,18 @@
 		FEE6C4B71C4D1D7F005894A5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FEE6C4BA1C4D1EB7005894A5 /* ProductListViewController.h */,
-				FEE6C4BB1C4D1EB7005894A5 /* ProductListViewController.m */,
-				FEE6C4BC1C4D1EB7005894A5 /* ProductListViewController.xib */,
+				FEE6C4BA1C4D1EB7005894A5 /* ProdListViewController.h */,
+				FEE6C4BB1C4D1EB7005894A5 /* ProdListViewController.m */,
+				FEE6C4BC1C4D1EB7005894A5 /* ProdListViewController.xib */,
 				A0DA4CAD1C5190A0007953C8 /* WXChatEditViewController.h */,
 				A0DA4CAE1C5190A0007953C8 /* WXChatEditViewController.m */,
 				A0DA4CAF1C5190A0007953C8 /* WXChatEditViewController.xib */,
 				A0DA4CB01C5190A0007953C8 /* WXChatPreviewViewController.h */,
 				A0DA4CB11C5190A0007953C8 /* WXChatPreviewViewController.m */,
 				A0DA4CB21C5190A0007953C8 /* WXChatPreviewViewController.xib */,
+				FEB2DB641C8813E70026F35F /* WXHeadView.h */,
+				FEB2DB651C8813E70026F35F /* WXHeadView.m */,
+				FEB2DB671C88191F0026F35F /* WXHeadView.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -319,8 +330,10 @@
 		FEE6C4B81C4D1D9F005894A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FEE6C4BF1C4D1ED3005894A5 /* ProductListCollectionViewCellModel.h */,
-				FEE6C4C01C4D1ED3005894A5 /* ProductListCollectionViewCellModel.m */,
+				FEE6C4BF1C4D1ED3005894A5 /* ProdListCollCellMod.h */,
+				FEE6C4C01C4D1ED3005894A5 /* ProdListCollCellMod.m */,
+				FEB2DB611C8810CB0026F35F /* WXHeadMod.h */,
+				FEB2DB621C8810CB0026F35F /* WXHeadMod.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -407,7 +420,8 @@
 				FE0243C11C3E7DEE00C5CE43 /* Assets.xcassets in Resources */,
 				FEE6C4C61C4D1EDD005894A5 /* ProductListCollectionViewCell.xib in Resources */,
 				A0DA4CB61C5190A0007953C8 /* WXChatPreviewViewController.xib in Resources */,
-				FEE6C4BE1C4D1EB7005894A5 /* ProductListViewController.xib in Resources */,
+				FEB2DB681C88191F0026F35F /* WXHeadView.xib in Resources */,
+				FEE6C4BE1C4D1EB7005894A5 /* ProdListViewController.xib in Resources */,
 				FE3DC4311C42A7C40090ECEC /* HomeViewController.xib in Resources */,
 				FE3DC4371C42A8340090ECEC /* UserInfoViewController.xib in Resources */,
 				FEE6C4CF1C4D271B005894A5 /* RKNavigationBarView.xib in Resources */,
@@ -427,16 +441,18 @@
 				A0DA4CA91C519052007953C8 /* CommonTool.m in Sources */,
 				FE0243B91C3E7DEE00C5CE43 /* AppDelegate.m in Sources */,
 				FEE6C4C51C4D1EDD005894A5 /* ProductListCollectionViewCell.m in Sources */,
-				FEE6C4BD1C4D1EB7005894A5 /* ProductListViewController.m in Sources */,
+				FEB2DB631C8810CB0026F35F /* WXHeadMod.m in Sources */,
+				FEE6C4BD1C4D1EB7005894A5 /* ProdListViewController.m in Sources */,
 				FE3DC42C1C42A7630090ECEC /* RKTabBarController.m in Sources */,
 				A0DA4CB51C5190A0007953C8 /* WXChatPreviewViewController.m in Sources */,
 				FE0243B61C3E7DEE00C5CE43 /* main.m in Sources */,
 				FEE6C4CA1C4D2709005894A5 /* RKNavigationBarViewModel.m in Sources */,
 				FEE6C4CE1C4D271B005894A5 /* RKNavigationBarView.m in Sources */,
 				FE3DC4301C42A7C40090ECEC /* HomeViewController.m in Sources */,
-				FEE6C4C11C4D1ED3005894A5 /* ProductListCollectionViewCellModel.m in Sources */,
+				FEE6C4C11C4D1ED3005894A5 /* ProdListCollCellMod.m in Sources */,
 				FE3DC4361C42A8340090ECEC /* UserInfoViewController.m in Sources */,
 				FE44B3541C455E6D00F4C0E9 /* BaseUIViewController.m in Sources */,
+				FEB2DB661C8813E70026F35F /* WXHeadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

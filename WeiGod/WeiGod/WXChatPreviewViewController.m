@@ -45,7 +45,7 @@
 }
 
 -(void)initFooterView{
-
+    
 }
 ///编辑按钮点击
 - (IBAction)ButtonEditingClicked:(UIButton *)sender {
@@ -59,7 +59,7 @@
     if(self.perviewImage!=nil){
         [self.PerviewImageView setImage:self.perviewImage];
     }else{
-        [self.PerviewImageView setImage:[UIImage imageNamed:@"wx3"]];
+        [self.PerviewImageView setImage:[UIImage imageNamed:@"wx1"]];
     }
 }
 @end

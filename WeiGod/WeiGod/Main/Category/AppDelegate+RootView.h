@@ -12,7 +12,7 @@
 @interface AppDelegate (RootView)
 
 /**
- *选择根控制器
+ *  选择根控制器
  */
 -(void)InitRootview;
 

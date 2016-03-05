@@ -10,9 +10,13 @@
 
 
 typedef void(^ReturnImageBlock)(UIImage *image);
-@interface WXChatEditViewController : BaseUIViewController
-@property (strong, nonatomic) IBOutlet UIView *HeaderView;
 
+@interface WXChatEditViewController : BaseUIViewController
+///要截图的view
+@property (strong, nonatomic) IBOutlet UIView *MyView;
+///微信头视图
+@property (weak, nonatomic) IBOutlet UIView *HeaderView;
+///返回block
 @property(nonatomic,copy)ReturnImageBlock returnImageBlock;
 
 -(void)returnImage:(ReturnImageBlock)block;

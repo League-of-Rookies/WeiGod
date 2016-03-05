@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ProductListCollectionViewCellModel.h"
+#import "ProdListCollCellMod.h"
 
 
 typedef void(^CellBlockClicked)(void);
@@ -15,7 +15,7 @@ typedef void(^CellBlockClicked)(void);
 
 @interface ProductListCollectionViewCell : UICollectionViewCell
 
-@property(nonatomic,retain)ProductListCollectionViewCellModel *model;
+@property(nonatomic,retain)ProdListCollCellMod *model;
 
 @property(nonatomic,copy)CellBlockClicked cellBlockClicked;
 

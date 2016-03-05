@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 ///存放productlist的背景图片和title说明
-@interface ProductListCollectionViewCellModel : NSObject
+@interface ProdListCollCellMod : NSObject
 @property(nonatomic,retain)NSString *backGround;
 @property(nonatomic,retain)NSString *titleString;
 @property(nonatomic)BOOL titleIsHidden;

@@ -18,7 +18,6 @@
 @implementation RKNavigationBarView
 
 +(instancetype)instanceObject{
-
     NSArray *nibView=[[NSBundle mainBundle]loadNibNamed:@"RKNavigationBarView" owner:nil options:nil];
     return [nibView objectAtIndex:0];
 }

@@ -26,13 +26,8 @@
 
 
 - (IBAction)btnWeiXinClicked:(UIButton *)sender {
-   ProductListViewController *weixinlist=[[ProductListViewController alloc]init];
-//    RKNavigationController *nav=[[RKNavigationController alloc]initWithRootViewController:weixinlist];
-//    nav.modalTransitionStyle=UIModalTransitionStyleFlipHorizontal;
-//    [self presentViewController:nav animated:YES completion:^{
-//        
-//        
-//    }];
+   ProdListViewController *weixinlist=[[ProdListViewController alloc]init];
+
     
     [self.navigationController pushViewController:weixinlist animated:YES];
 }

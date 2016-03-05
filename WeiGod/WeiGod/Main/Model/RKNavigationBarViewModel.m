@@ -16,7 +16,7 @@
         _rightButtonIsHidden=NO;
         _titleIsHidden=YES;
         _leftButtonBackGround=@"nav_left";
-        _rightButtonBackGround=@"productlist_show1";
+        _rightButtonBackGround=@"productlist_show2";
     }
     
     return self;
